@@ -9,11 +9,6 @@ const cloudinary = require("cloudinary").v2;
 app.use(cors());
 app.use(express.json());
 mongoose.connect(process.env.MONDB_URI);
-cloudinary.config({
-  cloud_name: "rsd8rxer",
-  api_key: "681697915164953",
-  api_secret: "hO2FNAjU8Ye6hjXcZjLn6ym5D14",
-});
 
 app.get("/", (req, res) => {
   try {
